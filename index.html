@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TriFreedom — तीन आज़ादियाँ। एक ज़िंदगी।</title>
-  <meta name="description" content="TriFreedom — समय, स्वास्थ्य और धन की आज़ादी। बिना किसी टेंशन के, बिना किसी के कंट्रोल के — अपनी शर्तों पर जीयी गई ज़िंदगी। यह एक movement है, हर उस इंसान के लिए जो सच्ची freedom चाहता है।" />
-  <meta property="og:title" content="TriFreedom — तीन आज़ादियाँ। एक ज़िंदगी।" />
-  <meta property="og:description" content="समय की आज़ादी। स्वास्थ्य की आज़ादी। धन की आज़ादी। अपनी शर्तों पर जीयी गई ज़िंदगी।" />
+  <title>TriFreedom — Three Freedoms. One Life.</title>
+  <meta name="description" content="TriFreedom — freedom of Time, Health and Wealth. No stress, no one controlling your life — a life lived on your own terms. A movement for everyone who wants true freedom. | समय, स्वास्थ्य और धन की आज़ादी।" />
+  <meta property="og:title" content="TriFreedom — Three Freedoms. One Life." />
+  <meta property="og:description" content="Freedom of Time. Freedom of Health. Freedom of Wealth. A life lived on your own terms." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://trifreedom.in" />
   <meta name="theme-color" content="#0b1026" />
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;700&family=Tiro+Devanagari+Hindi:ital@0;1&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-lang="en">
 
   <!-- ─── Nav ─── -->
   <nav class="nav">
@@ -24,11 +24,14 @@
       <svg class="brand-tri" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,10 92,85 8,85" /></svg>
       <span>Tri<b>Freedom</b></span>
     </a>
-    <div class="nav-links">
-      <a href="#teen-aazadiyan">तीन आज़ादियाँ</a>
-      <a href="#judaav">जुड़ाव</a>
-      <a href="#manifesto">सूत्र</a>
-      <a href="#safar">सफ़र</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#three-freedoms"><span class="en">Three Freedoms</span><span class="hi">तीन आज़ादियाँ</span></a>
+        <a href="#connection"><span class="en">Connection</span><span class="hi">जुड़ाव</span></a>
+        <a href="#principles"><span class="en">Principles</span><span class="hi">सूत्र</span></a>
+        <a href="#journey"><span class="en">Journey</span><span class="hi">सफ़र</span></a>
+      </div>
+      <button class="lang-btn" id="langBtn" aria-label="Switch language">हिंदी</button>
     </div>
   </nav>
 
@@ -45,51 +48,75 @@
         <circle class="tri-dot dot-health" cx="10"  cy="168" r="7" />
         <circle class="tri-dot dot-wealth" cx="190" cy="168" r="7" />
       </svg>
-      <h1>तीन आज़ादियाँ।<br /><span class="grad">एक ज़िंदगी।</span></h1>
+      <h1>
+        <span class="en">Three Freedoms.<br /><span class="grad">One Life.</span></span>
+        <span class="hi">तीन आज़ादियाँ।<br /><span class="grad">एक ज़िंदगी।</span></span>
+      </h1>
       <p class="hero-sub">
-        <span class="pill pill-time">समय</span>
-        <span class="pill pill-health">स्वास्थ्य</span>
-        <span class="pill pill-wealth">धन</span>
+        <span class="pill pill-time"><span class="en">Time</span><span class="hi">समय</span></span>
+        <span class="pill pill-health"><span class="en">Health</span><span class="hi">स्वास्थ्य</span></span>
+        <span class="pill pill-wealth"><span class="en">Wealth</span><span class="hi">धन</span></span>
       </p>
-      <p class="hero-line">बिना किसी टेंशन के। बिना किसी के कंट्रोल के।<br />अपनी शर्तों पर जीयी गई ज़िंदगी — यही है <b>TriFreedom</b>।</p>
-      <a class="cta" href="#teen-aazadiyan">सफ़र शुरू करें ↓</a>
+      <p class="hero-line">
+        <span class="en">No stress. No one controlling your life.<br />A life lived on your own terms — that is <b>TriFreedom</b>.</span>
+        <span class="hi">बिना किसी टेंशन के। बिना किसी के कंट्रोल के।<br />अपनी शर्तों पर जीयी गई ज़िंदगी — यही है <b>TriFreedom</b>।</span>
+      </p>
+      <a class="cta" href="#three-freedoms"><span class="en">Begin the journey ↓</span><span class="hi">सफ़र शुरू करें ↓</span></a>
     </div>
   </header>
 
-  <!-- ─── Kya hai ─── -->
+  <!-- ─── What is TriFreedom ─── -->
   <section class="section intro reveal">
     <p class="intro-big">
-      हम सब एक ही race में दौड़ रहे हैं — पर किसके लिए?<br />
-      किसी और का सपना, किसी और की deadline, किसी और का control.
+      <span class="en">We are all running the same race — but for whom?<br />Someone else's dream, someone else's deadline, someone else's control.</span>
+      <span class="hi">हम सब एक ही race में दौड़ रहे हैं — पर किसके लिए?<br />किसी और का सपना, किसी और की deadline, किसी और का control.</span>
     </p>
     <p class="intro-body">
-      TriFreedom एक सोच है, एक movement है — कि ज़िंदगी में असली दौलत तीन आज़ादियाँ हैं।
-      जिस दिन ये तीनों आपकी हो गईं, उस दिन आप सच में <em>आज़ाद</em> हैं।
-      न alarm की ग़ुलामी, न बीमारी का डर, न पैसों की चिंता।
-      सिर्फ़ आप, आपके अपने, और खुलकर जीयी गई ज़िंदगी।
+      <span class="en">
+        TriFreedom is a belief, a movement — that the real wealth of life is three freedoms.
+        The day all three are yours, you are truly <em>free</em>.
+        No slavery to the alarm clock, no fear of illness, no worry about money.
+        Just you, your loved ones, and a life lived fully.
+      </span>
+      <span class="hi">
+        TriFreedom एक सोच है, एक movement है — कि ज़िंदगी में असली दौलत तीन आज़ादियाँ हैं।
+        जिस दिन ये तीनों आपकी हो गईं, उस दिन आप सच में <em>आज़ाद</em> हैं।
+        न alarm की ग़ुलामी, न बीमारी का डर, न पैसों की चिंता।
+        सिर्फ़ आप, आपके अपने, और खुलकर जीयी गई ज़िंदगी।
+      </span>
     </p>
   </section>
 
-  <!-- ─── Teen Aazadiyan ─── -->
-  <section class="section" id="teen-aazadiyan">
-    <h2 class="sec-title reveal">तीन आज़ादियाँ</h2>
+  <!-- ─── Three Freedoms ─── -->
+  <section class="section" id="three-freedoms">
+    <h2 class="sec-title reveal"><span class="en">The Three Freedoms</span><span class="hi">तीन आज़ादियाँ</span></h2>
     <div class="cards">
 
       <article class="card card-time reveal">
         <div class="card-icon" aria-hidden="true">
           <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-width="4"/><path d="M32 16v16l11 7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <h3>समय की आज़ादी</h3>
-        <p class="card-shair">“घड़ी आपकी कलाई पर होनी चाहिए,<br />आपकी ज़िंदगी पर नहीं।”</p>
+        <h3><span class="en">Freedom of Time</span><span class="hi">समय की आज़ादी</span></h3>
+        <p class="card-shair">
+          <span class="en">“A watch belongs on your wrist —<br />not on your life.”</span>
+          <span class="hi">“घड़ी आपकी कलाई पर होनी चाहिए,<br />आपकी ज़िंदगी पर नहीं।”</span>
+        </p>
         <p>
-          अपना दिन खुद चुनना — कब काम, कब आराम, कब अपनों के साथ।
-          समय की आज़ादी का मतलब काम छोड़ना नहीं है, बल्कि ऐसा जीवन बनाना है
-          जहाँ आपका समय <b>आपके</b> फ़ैसलों से चले, किसी और के order से नहीं।
+          <span class="en">
+            Choosing your own day — when to work, when to rest, when to be with the people you love.
+            Time freedom doesn't mean quitting work. It means building a life where your time
+            follows <b>your</b> decisions, not someone else's orders.
+          </span>
+          <span class="hi">
+            अपना दिन खुद चुनना — कब काम, कब आराम, कब अपनों के साथ।
+            समय की आज़ादी का मतलब काम छोड़ना नहीं है, बल्कि ऐसा जीवन बनाना है
+            जहाँ आपका समय <b>आपके</b> फ़ैसलों से चले, किसी और के order से नहीं।
+          </span>
         </p>
         <ul>
-          <li>दिन का पहला घंटा — सिर्फ़ अपने लिए</li>
-          <li>काम को समय दो, समय को काम मत बना लो</li>
-          <li>ऐसे income के रास्ते बनाओ जो आपके सोने के बाद भी चलें</li>
+          <li><span class="en">The first hour of the day — only for yourself</span><span class="hi">दिन का पहला घंटा — सिर्फ़ अपने लिए</span></li>
+          <li><span class="en">Give work your time, but don't let time become work</span><span class="hi">काम को समय दो, समय को काम मत बना लो</span></li>
+          <li><span class="en">Build income streams that keep working while you sleep</span><span class="hi">ऐसे income के रास्ते बनाओ जो आपके सोने के बाद भी चलें</span></li>
         </ul>
       </article>
 
@@ -97,17 +124,27 @@
         <div class="card-icon" aria-hidden="true">
           <svg viewBox="0 0 64 64"><path d="M32 54S8 40 8 24c0-8 6-14 13-14 5 0 9 3 11 7 2-4 6-7 11-7 7 0 13 6 13 14 0 16-24 30-24 30z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M14 32h10l4-8 6 14 4-6h12" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <h3>स्वास्थ्य की आज़ादी</h3>
-        <p class="card-shair">“सेहत वो पूँजी है जिसके बिना<br />बाक़ी सारी दौलत सिर्फ़ नंबर है।”</p>
+        <h3><span class="en">Freedom of Health</span><span class="hi">स्वास्थ्य की आज़ादी</span></h3>
+        <p class="card-shair">
+          <span class="en">“Health is the capital without which<br />all other wealth is just numbers.”</span>
+          <span class="hi">“सेहत वो पूँजी है जिसके बिना<br />बाक़ी सारी दौलत सिर्फ़ नंबर है।”</span>
+        </p>
         <p>
-          मज़बूत शरीर, शांत मन, गहरी नींद। स्वास्थ्य की आज़ादी का मतलब है —
-          दवाइयों और डर पर नहीं, अपनी आदतों पर भरोसा।
-          तन और मन दोनों की ताक़त, ताकि ज़िंदगी का हर दिन पूरी तरह जीया जा सके।
+          <span class="en">
+            A strong body, a calm mind, deep sleep. Health freedom means trusting your habits —
+            not medicines and fear. Strength of body and mind, so that every single day
+            of life can be lived fully.
+          </span>
+          <span class="hi">
+            मज़बूत शरीर, शांत मन, गहरी नींद। स्वास्थ्य की आज़ादी का मतलब है —
+            दवाइयों और डर पर नहीं, अपनी आदतों पर भरोसा।
+            तन और मन दोनों की ताक़त, ताकि ज़िंदगी का हर दिन पूरी तरह जीया जा सके।
+          </span>
         </p>
         <ul>
-          <li>रोज़ 30 मिनट शरीर के नाम — walk, yoga, कुछ भी</li>
-          <li>खाना वो जो शरीर बनाए, स्वाद सिर्फ़ ज़ुबान तक</li>
-          <li>नींद कोई luxury नहीं — foundation है</li>
+          <li><span class="en">30 minutes a day for your body — walk, yoga, anything</span><span class="hi">रोज़ 30 मिनट शरीर के नाम — walk, yoga, कुछ भी</span></li>
+          <li><span class="en">Eat what builds the body — taste is only for the tongue</span><span class="hi">खाना वो जो शरीर बनाए, स्वाद सिर्फ़ ज़ुबान तक</span></li>
+          <li><span class="en">Sleep is not a luxury — it is the foundation</span><span class="hi">नींद कोई luxury नहीं — foundation है</span></li>
         </ul>
       </article>
 
@@ -115,90 +152,170 @@
         <div class="card-icon" aria-hidden="true">
           <svg viewBox="0 0 64 64"><path d="M10 44l12-14 10 8 14-18 8 6" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 54h48" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
         </div>
-        <h3>धन की आज़ादी</h3>
-        <p class="card-shair">“पैसा मक़सद नहीं, ज़रिया है —<br />डर से आज़ादी का।”</p>
+        <h3><span class="en">Freedom of Wealth</span><span class="hi">धन की आज़ादी</span></h3>
+        <p class="card-shair">
+          <span class="en">“Money is not the goal — it is the means<br />to freedom from fear.”</span>
+          <span class="hi">“पैसा मक़सद नहीं, ज़रिया है —<br />डर से आज़ादी का।”</span>
+        </p>
         <p>
-          धन की आज़ादी का मतलब करोड़ों नहीं — <b>बेफ़िक्री</b> है।
-          इतना कि ज़रूरतें पूरी हों, इतना कि 'ना' कहने की ताक़त हो,
-          और इतना कि पैसा आपके लिए काम करे — आप पैसे के लिए नहीं।
+          <span class="en">
+            Wealth freedom is not crores — it is <b>peace of mind</b>.
+            Enough to cover your needs, enough to have the power to say "no",
+            and enough that money works for you — not you for money.
+          </span>
+          <span class="hi">
+            धन की आज़ादी का मतलब करोड़ों नहीं — <b>बेफ़िक्री</b> है।
+            इतना कि ज़रूरतें पूरी हों, इतना कि 'ना' कहने की ताक़त हो,
+            और इतना कि पैसा आपके लिए काम करे — आप पैसे के लिए नहीं।
+          </span>
         </p>
         <ul>
-          <li>पहले ख़ुद को pay करो — कमाई का हिस्सा सबसे पहले बचत में</li>
-          <li>क़र्ज़ से दूरी, समझ से निवेश</li>
-          <li>एक income कभी काफ़ी नहीं — धीरे-धीरे कई धाराएँ बनाओ</li>
+          <li><span class="en">Pay yourself first — savings before spending</span><span class="hi">पहले ख़ुद को pay करो — कमाई का हिस्सा सबसे पहले बचत में</span></li>
+          <li><span class="en">Stay away from debt, invest with understanding</span><span class="hi">क़र्ज़ से दूरी, समझ से निवेश</span></li>
+          <li><span class="en">One income is never enough — slowly build many streams</span><span class="hi">एक income कभी काफ़ी नहीं — धीरे-धीरे कई धाराएँ बनाओ</span></li>
         </ul>
       </article>
 
     </div>
   </section>
 
-  <!-- ─── Judaav (triangle) ─── -->
-  <section class="section judaav reveal" id="judaav">
-    <h2 class="sec-title">तीनों एक-दूसरे से जुड़ी हैं</h2>
+  <!-- ─── Connection (triangle) ─── -->
+  <section class="section judaav reveal" id="connection">
+    <h2 class="sec-title"><span class="en">All Three Are Connected</span><span class="hi">तीनों एक-दूसरे से जुड़ी हैं</span></h2>
     <div class="judaav-grid">
       <svg class="judaav-tri" viewBox="0 0 220 200" aria-hidden="true">
         <polygon class="tri-line" points="110,16 204,178 16,178" />
-        <text x="110" y="10" text-anchor="middle" class="tri-label time">समय</text>
-        <text x="16" y="196" text-anchor="middle" class="tri-label health">स्वास्थ्य</text>
-        <text x="204" y="196" text-anchor="middle" class="tri-label wealth">धन</text>
+        <text x="110" y="10" text-anchor="middle" class="tri-label time"><tspan class="en">Time</tspan><tspan class="hi">समय</tspan></text>
+        <text x="16" y="196" text-anchor="middle" class="tri-label health"><tspan class="en">Health</tspan><tspan class="hi">स्वास्थ्य</tspan></text>
+        <text x="204" y="196" text-anchor="middle" class="tri-label wealth"><tspan class="en">Wealth</tspan><tspan class="hi">धन</tspan></text>
       </svg>
       <div class="judaav-text">
-        <p>ये तीन अलग-अलग लक्ष्य नहीं हैं — <b>एक ही त्रिकोण के तीन कोने</b> हैं।</p>
-        <p>पैसा कमाने में सेहत गँवा दी, तो वही पैसा इलाज में चला जाएगा।<br />
-           सेहत है पर समय नहीं, तो जीने की फ़ुर्सत ही नहीं।<br />
-           समय है पर धन नहीं, तो हर दिन चिंता में कटेगा।</p>
-        <p class="judaav-strong">एक कोना टूटा, तो त्रिकोण टूटा।<br />तीनों साधो — तभी ज़िंदगी सधती है।</p>
+        <p>
+          <span class="en">These are not three separate goals — they are <b>three corners of the same triangle</b>.</span>
+          <span class="hi">ये तीन अलग-अलग लक्ष्य नहीं हैं — <b>एक ही त्रिकोण के तीन कोने</b> हैं।</span>
+        </p>
+        <p>
+          <span class="en">Lose your health while earning money, and that same money goes to hospitals.<br />
+            Health without time means no chance to actually live.<br />
+            Time without wealth means every day spent in worry.</span>
+          <span class="hi">पैसा कमाने में सेहत गँवा दी, तो वही पैसा इलाज में चला जाएगा।<br />
+            सेहत है पर समय नहीं, तो जीने की फ़ुर्सत ही नहीं।<br />
+            समय है पर धन नहीं, तो हर दिन चिंता में कटेगा।</span>
+        </p>
+        <p class="judaav-strong">
+          <span class="en">Break one corner, and the triangle breaks.<br />Master all three — that is when life comes together.</span>
+          <span class="hi">एक कोना टूटा, तो त्रिकोण टूटा।<br />तीनों साधो — तभी ज़िंदगी सधती है।</span>
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- ─── Manifesto ─── -->
-  <section class="section manifesto" id="manifesto">
-    <h2 class="sec-title reveal">TriFreedom के 7 सूत्र</h2>
+  <!-- ─── Principles ─── -->
+  <section class="section manifesto" id="principles">
+    <h2 class="sec-title reveal"><span class="en">The 7 Principles of TriFreedom</span><span class="hi">TriFreedom के 7 सूत्र</span></h2>
     <ol class="sutra">
-      <li class="reveal"><b>ज़िंदगी उधार की नहीं है।</b> इसे किसी और की शर्तों पर मत जियो।</li>
-      <li class="reveal"><b>आज़ादी मिलती नहीं, बनाई जाती है।</b> रोज़ के छोटे फ़ैसलों से।</li>
-      <li class="reveal"><b>तुलना ज़हर है।</b> दौड़ सिर्फ़ कल के अपने-आप से।</li>
-      <li class="reveal"><b>सादगी ताक़त है।</b> कम चीज़ें, कम EMI, कम बोझ — ज़्यादा सुकून।</li>
-      <li class="reveal"><b>सीखना कभी बंद नहीं।</b> हर skill आज़ादी की एक और चाबी है।</li>
-      <li class="reveal"><b>धैर्य ही रास्ता है।</b> shortcut की तलाश ही सबसे लंबा रास्ता है।</li>
-      <li class="reveal"><b>अकेले नहीं — साथ।</b> आज़ाद लोग दूसरों को भी आज़ाद करते हैं।</li>
+      <li class="reveal">
+        <span class="en"><b>Your life is not borrowed.</b> Don't live it on someone else's terms.</span>
+        <span class="hi"><b>ज़िंदगी उधार की नहीं है।</b> इसे किसी और की शर्तों पर मत जियो।</span>
+      </li>
+      <li class="reveal">
+        <span class="en"><b>Freedom is not given — it is built.</b> Through small decisions, every single day.</span>
+        <span class="hi"><b>आज़ादी मिलती नहीं, बनाई जाती है।</b> रोज़ के छोटे फ़ैसलों से।</span>
+      </li>
+      <li class="reveal">
+        <span class="en"><b>Comparison is poison.</b> Race only against who you were yesterday.</span>
+        <span class="hi"><b>तुलना ज़हर है।</b> दौड़ सिर्फ़ कल के अपने-आप से।</span>
+      </li>
+      <li class="reveal">
+        <span class="en"><b>Simplicity is strength.</b> Fewer things, fewer EMIs, less burden — more peace.</span>
+        <span class="hi"><b>सादगी ताक़त है।</b> कम चीज़ें, कम EMI, कम बोझ — ज़्यादा सुकून।</span>
+      </li>
+      <li class="reveal">
+        <span class="en"><b>Never stop learning.</b> Every skill is one more key to freedom.</span>
+        <span class="hi"><b>सीखना कभी बंद नहीं।</b> हर skill आज़ादी की एक और चाबी है।</span>
+      </li>
+      <li class="reveal">
+        <span class="en"><b>Patience is the path.</b> The search for shortcuts is the longest road of all.</span>
+        <span class="hi"><b>धैर्य ही रास्ता है।</b> shortcut की तलाश ही सबसे लंबा रास्ता है।</span>
+      </li>
+      <li class="reveal">
+        <span class="en"><b>Not alone — together.</b> Free people set others free.</span>
+        <span class="hi"><b>अकेले नहीं — साथ।</b> आज़ाद लोग दूसरों को भी आज़ाद करते हैं।</span>
+      </li>
     </ol>
   </section>
 
-  <!-- ─── Safar / Vision ─── -->
-  <section class="section safar reveal" id="safar">
-    <h2 class="sec-title">यह सफ़र अभी शुरू हुआ है</h2>
+  <!-- ─── Journey / Vision ─── -->
+  <section class="section safar reveal" id="journey">
+    <h2 class="sec-title"><span class="en">The Journey Has Just Begun</span><span class="hi">यह सफ़र अभी शुरू हुआ है</span></h2>
     <div class="safar-steps">
       <div class="step">
-        <span class="step-num">१</span>
-        <h4>जागरूकता</h4>
-        <p>यह website — TriFreedom की सोच हर उस इंसान तक पहुँचे जिसे इसकी ज़रूरत है।</p>
+        <span class="step-num"><span class="en">1</span><span class="hi">१</span></span>
+        <h4><span class="en">Awareness</span><span class="hi">जागरूकता</span></h4>
+        <p>
+          <span class="en">This website — so the idea of TriFreedom reaches every person who needs it.</span>
+          <span class="hi">यह website — TriFreedom की सोच हर उस इंसान तक पहुँचे जिसे इसकी ज़रूरत है।</span>
+        </p>
       </div>
       <div class="step">
-        <span class="step-num">२</span>
-        <h4>समुदाय</h4>
-        <p>ऐसे लोगों का साथ जो एक-दूसरे को तीनों आज़ादियों की तरफ़ ले जाएँ।</p>
+        <span class="step-num"><span class="en">2</span><span class="hi">२</span></span>
+        <h4><span class="en">Community</span><span class="hi">समुदाय</span></h4>
+        <p>
+          <span class="en">People who help each other move toward all three freedoms.</span>
+          <span class="hi">ऐसे लोगों का साथ जो एक-दूसरे को तीनों आज़ादियों की तरफ़ ले जाएँ।</span>
+        </p>
       </div>
       <div class="step">
-        <span class="step-num">३</span>
-        <h4>रास्ते और औज़ार</h4>
-        <p>सीखने की चीज़ें, आदतों के tools, और आज़ादी की तरफ़ ले जाने वाले तरीक़े।</p>
+        <span class="step-num"><span class="en">3</span><span class="hi">३</span></span>
+        <h4><span class="en">Paths &amp; Tools</span><span class="hi">रास्ते और औज़ार</span></h4>
+        <p>
+          <span class="en">Things to learn, habit tools, and practical ways that lead to freedom.</span>
+          <span class="hi">सीखने की चीज़ें, आदतों के tools, और आज़ादी की तरफ़ ले जाने वाले तरीक़े।</span>
+        </p>
       </div>
     </div>
-    <p class="safar-note">यह किसी को जल्दी अमीर बनाने की scheme नहीं है। यह धीरे-धीरे, सच्चाई से,<br />अपनी ज़िंदगी वापस अपने हाथ में लेने का रास्ता है।</p>
+    <p class="safar-note">
+      <span class="en">This is not a get-rich-quick scheme. It is the slow, honest road<br />to taking your life back into your own hands.</span>
+      <span class="hi">यह किसी को जल्दी अमीर बनाने की scheme नहीं है। यह धीरे-धीरे, सच्चाई से,<br />अपनी ज़िंदगी वापस अपने हाथ में लेने का रास्ता है।</span>
+    </p>
   </section>
 
-  <!-- ─── Footer CTA ─── -->
+  <!-- ─── Footer ─── -->
   <footer class="footer">
     <svg class="footer-tri" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,10 92,85 8,85" /></svg>
-    <p class="footer-big">आज़ादी एक दिन में नहीं मिलती।<br />पर शुरुआत <span class="grad">आज</span> हो सकती है।</p>
-    <p class="footer-small">TriFreedom · समय । स्वास्थ्य । धन<br />एक सपना — सबकी आज़ादी।</p>
+    <p class="footer-big">
+      <span class="en">Freedom doesn't come in a day.<br />But it can begin <span class="grad">today</span>.</span>
+      <span class="hi">आज़ादी एक दिन में नहीं मिलती।<br />पर शुरुआत <span class="grad">आज</span> हो सकती है।</span>
+    </p>
+    <p class="footer-small">
+      <span class="en">TriFreedom · Time | Health | Wealth<br />One dream — freedom for everyone.</span>
+      <span class="hi">TriFreedom · समय । स्वास्थ्य । धन<br />एक सपना — सबकी आज़ादी।</span>
+    </p>
     <p class="footer-copy">© <span id="year"></span> trifreedom.in</p>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ── Language toggle (default: English) ──
+    const TITLES = {
+      en: 'TriFreedom — Three Freedoms. One Life.',
+      hi: 'TriFreedom — तीन आज़ादियाँ। एक ज़िंदगी।',
+    };
+    const btn = document.getElementById('langBtn');
+    function setLang(lang) {
+      document.body.dataset.lang = lang;
+      document.documentElement.lang = lang;
+      document.title = TITLES[lang];
+      btn.textContent = lang === 'en' ? 'हिंदी' : 'English';
+      try { localStorage.setItem('tf-lang', lang); } catch (e) {}
+    }
+    btn.addEventListener('click', () => setLang(document.body.dataset.lang === 'en' ? 'hi' : 'en'));
+    let saved = null;
+    try { saved = localStorage.getItem('tf-lang'); } catch (e) {}
+    setLang(saved === 'hi' ? 'hi' : 'en');
+
+    // ── Scroll reveal ──
     const io = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }),
       { threshold: 0.12 }

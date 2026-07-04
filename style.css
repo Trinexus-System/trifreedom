@@ -31,6 +31,35 @@ body {
 }
 
 h1, h2, h3, h4 { font-family: 'Tiro Devanagari Hindi', 'Mukta', serif; font-weight: 400; }
+
+/* ─── Language toggle ───
+   Every bilingual text lives twice: <span class="en"> + <span class="hi">.
+   body[data-lang] decides which one exists. Default: en. */
+body[data-lang="en"] .hi { display: none !important; }
+body[data-lang="hi"] .en { display: none !important; }
+
+/* English typography: strong grotesque headings; Hindi keeps Tiro serif */
+body[data-lang="en"] h1,
+body[data-lang="en"] h2,
+body[data-lang="en"] h3,
+body[data-lang="en"] h4 { font-family: 'Inter', 'Mukta', sans-serif; font-weight: 800; letter-spacing: -0.01em; }
+body[data-lang="en"] .intro-big,
+body[data-lang="en"] .card-shair,
+body[data-lang="en"] .judaav-strong,
+body[data-lang="en"] .safar-note,
+body[data-lang="en"] .footer-big { font-family: 'Inter', 'Mukta', sans-serif; }
+body[data-lang="en"] .intro-big,
+body[data-lang="en"] .footer-big { font-weight: 600; }
+
+.lang-btn {
+  padding: 7px 18px; border-radius: 999px; cursor: pointer;
+  background: rgba(245, 185, 66, 0.1); color: var(--gold);
+  border: 1px solid rgba(245, 185, 66, 0.45);
+  font-family: 'Mukta', sans-serif; font-size: 15px; font-weight: 500;
+  transition: background 0.25s, transform 0.2s;
+}
+.lang-btn:hover { background: rgba(245, 185, 66, 0.22); transform: translateY(-1px); }
+.nav-right { display: flex; align-items: center; gap: clamp(12px, 3vw, 26px); }
 b { font-weight: 700; }
 .grad {
   background: linear-gradient(100deg, var(--gold), var(--gold-2));
@@ -217,8 +246,9 @@ b { font-weight: 700; }
   border: 1px solid var(--line); border-radius: 14px; color: var(--ink-dim);
 }
 .sutra li b { color: var(--ink); display: block; font-size: 18px; margin-bottom: 2px; }
+body[data-lang="hi"] .sutra li::before { content: counter(sutra, devanagari); }
 .sutra li::before {
-  content: counter(sutra, devanagari);
+  content: counter(sutra);
   position: absolute; left: 22px; top: 50%; transform: translateY(-50%);
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;

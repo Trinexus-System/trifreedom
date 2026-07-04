@@ -12,7 +12,7 @@
 
 ## Tech
 
-Pure static site — koi framework nahi, koi build step nahi. `index.html` + `style.css`, bas.
+Bilingual (English default + हिंदी toggle, nav button, localStorage-persisted). Pure static site — koi framework nahi, koi build step nahi. `index.html` + `style.css`, bas.
 Isliye hamesha fast, hamesha zero-maintenance.
 
 - Fonts: Mukta + Tiro Devanagari Hindi (Google Fonts)
