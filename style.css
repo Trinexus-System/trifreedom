@@ -236,6 +236,45 @@ b { font-weight: 700; }
   .judaav-tri { max-width: 240px; margin: 0 auto; }
 }
 
+/* posters */
+.posters { text-align: center; }
+.posters-lead {
+  color: var(--ink-dim); font-size: clamp(16px, 2.2vw, 19px);
+  margin: -18px 0 clamp(30px, 5vw, 48px);
+}
+.poster-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+.poster-card {
+  background: linear-gradient(170deg, var(--card), var(--bg-2));
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px 14px 18px; margin: 0;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.poster-card:hover { transform: translateY(-6px); border-color: rgba(245, 185, 66, 0.5); }
+.poster-btn {
+  display: block; width: 100%; padding: 0; border: 0; cursor: zoom-in;
+  background: none; border-radius: 12px; overflow: hidden;
+}
+.poster-btn img { display: block; width: 100%; height: auto; border-radius: 12px; }
+.poster-card figcaption {
+  margin-top: 14px; color: var(--ink-dim); font-size: 15px; line-height: 1.5;
+}
+
+/* lightbox */
+.lightbox[hidden] { display: none; }
+.lightbox {
+  position: fixed; inset: 0; z-index: 100; cursor: zoom-out;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(5, 8, 20, 0.92); backdrop-filter: blur(6px);
+  padding: clamp(14px, 4vw, 48px);
+}
+.lightbox img {
+  max-width: 100%; max-height: 100%; border-radius: 14px;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.7);
+}
+
 /* manifesto */
 .manifesto { max-width: 820px; }
 .sutra { list-style: none; counter-reset: sutra; }

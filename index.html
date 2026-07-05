@@ -9,6 +9,9 @@
   <meta property="og:description" content="Freedom of Time. Freedom of Health. Freedom of Wealth. A life lived on your own terms." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://trifreedom.in" />
+  <meta property="og:image" content="https://trifreedom.in/posters/og-trifreedom.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://trifreedom.in/posters/og-trifreedom.jpg" />
   <meta name="theme-color" content="#0b1026" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,8 95,88 5,88' fill='none' stroke='%23f5b942' stroke-width='8' stroke-linejoin='round'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -210,6 +213,47 @@
     </div>
   </section>
 
+  <!-- ─── Posters ─── -->
+  <section class="section posters" id="posters">
+    <h2 class="sec-title reveal"><span class="en">The Whole Idea — In One Frame</span><span class="hi">पूरी सोच — एक तस्वीर में</span></h2>
+    <p class="posters-lead reveal">
+      <span class="en">Three posters, one message. Save them, share them — let the idea of freedom travel.</span>
+      <span class="hi">तीन posters, एक ही संदेश। इन्हें save करें, share करें — आज़ादी की सोच आगे बढ़े।</span>
+    </p>
+    <div class="poster-grid">
+      <figure class="poster-card reveal">
+        <button class="poster-btn" data-full="posters/trifreedom-triangle.webp" aria-label="Open poster">
+          <img src="posters/trifreedom-triangle.webp" loading="lazy" width="1254" height="1254"
+               alt="TriFreedom triangle poster — Time, Health and Wealth connected as three corners of one triangle" />
+        </button>
+        <figcaption>
+          <span class="en">The TriFreedom Triangle — three corners, one life.</span>
+          <span class="hi">TriFreedom त्रिकोण — तीन कोने, एक ज़िंदगी।</span>
+        </figcaption>
+      </figure>
+      <figure class="poster-card reveal">
+        <button class="poster-btn" data-full="posters/pyramid-freedom-en.webp" aria-label="Open poster">
+          <img src="posters/pyramid-freedom-en.webp" loading="lazy" width="1254" height="1254"
+               alt="TriFreedom pyramid poster — the three freedoms: Time, Health and Wealth" />
+        </button>
+        <figcaption>
+          <span class="en">The three freedoms, level by level.</span>
+          <span class="hi">तीनों आज़ादियाँ — एक-एक पड़ाव करके।</span>
+        </figcaption>
+      </figure>
+      <figure class="poster-card reveal">
+        <button class="poster-btn" data-full="posters/pyramid-jeevan-hi.webp" aria-label="Open poster">
+          <img src="posters/pyramid-jeevan-hi.webp" loading="lazy" width="1254" height="1254"
+               alt="TriFreedom pyramid poster in Hindi — life's journey from survival to growth to fulfillment" />
+        </button>
+        <figcaption>
+          <span class="en">Life's journey — from survival to fulfillment.</span>
+          <span class="hi">ज़िंदगी का सफ़र — Survival से पूर्णता तक।</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
   <!-- ─── Principles ─── -->
   <section class="section manifesto" id="principles">
     <h2 class="sec-title reveal"><span class="en">The 7 Principles of TriFreedom</span><span class="hi">TriFreedom के 7 सूत्र</span></h2>
@@ -294,6 +338,11 @@
     <p class="footer-copy">© <span id="year"></span> trifreedom.in</p>
   </footer>
 
+  <!-- ─── Poster lightbox ─── -->
+  <div class="lightbox" id="lightbox" hidden>
+    <img id="lightboxImg" src="" alt="TriFreedom poster — full view" />
+  </div>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -314,6 +363,18 @@
     let saved = null;
     try { saved = localStorage.getItem('tf-lang'); } catch (e) {}
     setLang(saved === 'hi' ? 'hi' : 'en');
+
+    // ── Poster lightbox ──
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightboxImg');
+    document.querySelectorAll('.poster-btn').forEach(b => b.addEventListener('click', () => {
+      lbImg.src = b.dataset.full;
+      lb.hidden = false;
+      document.body.style.overflow = 'hidden';
+    }));
+    function closeLightbox() { lb.hidden = true; lbImg.src = ''; document.body.style.overflow = ''; }
+    lb.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !lb.hidden) closeLightbox(); });
 
     // ── Scroll reveal ──
     const io = new IntersectionObserver(
